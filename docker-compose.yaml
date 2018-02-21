@@ -1,0 +1,9 @@
+go_skeleton:
+  image: chomey/$SERVICE_NAME:localdev
+  ports:
+    - "9090:9090"
+  volumes:
+    - ./logs/:/var/log/
+  environment:
+    - VERSION=$VERSION
+    - ENVIRONMENT_VARIABLE=$ENVIRONMENT_VARIABLE
